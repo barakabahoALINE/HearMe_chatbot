@@ -1,0 +1,5 @@
+.with-icon {
+    background: url('../images/icon.png') no-repeat left center;
+    background-size: 16px 16px; /* Adjust size if needed */
+    padding-left: 30px;
+}

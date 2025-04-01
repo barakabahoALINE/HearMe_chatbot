@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HearMe Chatbot</title>
+    {% load static %}
+<link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+<h1>Welcome to HearMe Chatbot</h1>
+<form method="POST" action="/api/analyze/">
+    {% csrf_token %}
+    <textarea name="text" placeholder="Type your message..."></textarea>
+    <button type="submit">Send</button>
+</form>
+</body>
+</html>
